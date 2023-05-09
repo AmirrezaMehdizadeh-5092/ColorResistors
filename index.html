@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقاومت رنگی</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>دانشجو: امیررضا مهدی زاده</h2>
+        <h2>پروژه: مقاومت های رنگی</h2>
+        <h2>درس: آز مدار الکتریکی</h2>
+        <h2>استاد درس : جناب مهندس موذن</h2>
+    </header>
+    <nav>
+        <button id="four-btn">مقاومت 4 رنگ</button>
+        <button id="five-btn">مقاومت 5 رنگ</button>
+    </nav>
+    <section id="four" class="four">
+        <div class="four1">
+            <div class="line"></div>
+            <div class="box">
+                <div class="sec" id="check4">
+                    <select name="sel4" id="id4">
+                        <option value="brown" selected onclick="R4_4('brown')" style="background-color: brown;">قهوه ای
+                        </option>
+                        <option value="red" onclick="R4_4('red')" style="background-color: red;">قرمز</option>
+                        <option value="green" onclick="R4_4('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R4_4('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R4_4('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R4_4('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="gold" onclick="R4_4('gold')" style="background-color: gold;">طلایی</option>
+                        <option value="silver" onclick="R4_4('silver')" style="background-color: silver;">نقره ای
+                        </option>
+                        <option value="none" onclick="R4_4('none')" style="background-color: white;">هیچکدام</option>
+                    </select>
+                </div>
+                <div class="sec" id="check3">
+                    <select name="sel3" id="id3">
+                        <option value="black" onclick="R4_3('black')" style="background-color: black;" selected>مشکی
+                        </option>
+                        <option value="brown" onclick="R4_3('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R4_3('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R4_3('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R4_3('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R4_3('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R4_3('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R4_3('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R4_3('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="white" onclick="R4_3('white')" style="background-color: white;">سفید</option>
+                        <option value="gold" onclick="R4_3('gold')" style="background-color: gold;">طلایی</option>
+                        <option value="silver" onclick="R4_3('silver')" style="background-color: silver;">نقره ای
+                        </option>
+                    </select>
+                </div>
+                <div class="sec" id="check2">
+                    <select name="sel2" id="id2">
+                        <option value="black" onclick="R4_2('black')" selected style="background-color: black;">مشکی
+                        </option>
+                        <option value="brown" onclick="R4_2('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R4_2('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R4_2('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R4_2('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R4_2('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R4_2('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R4_2('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R4_2('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="white" onclick="R4_2('white')" style="background-color: white;">سفید</option>
+                    </select>
+                </div>
+                <div class="sec" id="check1">
+                    <select name="sel1" id="id1">
+                        <option value="brown" onclick="R4_1('brown')" selected style="background-color: brown;">قهوه ای
+                        </option>
+                        <option value="red" onclick="R4_1('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R4_1('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R4_1('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R4_1('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R4_1('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R4_1('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R4_1('gry')" style="background-color: grey;">خاکستری</option>
+                        <option value="white" onclick="R4_1('white')" style="background-color: white;">سفید</option>
+                    </select>
+                </div>
+            </div>
+            <button id="cal">محاسبه</button>
+        </div>
+    </section>
+    <section id="five" class="five">
+        <div class="four1">
+            <div class="line"></div>
+            <div class="box">
+                <div class="sec" id="check5_5">
+                    <select name="sel5" id="id5_5">
+                        <option value="brown" onclick="R5_5('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R5_5('red')" style="background-color: red;">قرمز</option>
+                        <option value="green" onclick="R5_5('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R5_5('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R5_5('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R5_5('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="gold" onclick="R5_5('gold')" style="background-color: gold;">طلایی</option>
+                        <option value="silver" onclick="R5_5('silver')" style="background-color: silver;">نقره ای
+                        </option>
+                        <option value="none" onclick="R5_5('none')" style="background-color: white;">هیچکدام</option>
+                    </select>
+                </div>
+                <div class="sec" id="check5_4">
+                    <select name="sel4" id="id5_4">
+                        <option value="black" onclick="R5_4('black')" selected style="background-color: black;">مشکی
+                        </option>
+                        <option value="brown" onclick="R5_4('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R5_4('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R5_4('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R5_4('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R5_4('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R5_4('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R5_4('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R5_4('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="white" onclick="R5_4('white')" style="background-color: white;">سفید</option>
+                        <option value="gold" onclick="R5_4('gold')" style="background-color: gold;">طلایی</option>
+                        <option value="silver" onclick="R5_4('silver')" style="background-color: silver;">نقره ای
+                        </option>
+                    </select>
+                </div>
+                <div class="sec" id="check5_3">
+                    <select name="sel3" id="id5_3">
+                        <option value="black" onclick="R5_3('black')" selected style="background-color: black;">مشکی
+                        </option>
+                        <option value="brown" onclick="R5_3('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R5_3('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R5_3('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R5_3('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R5_3('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R5_3('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R5_3('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R5_3('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="white" onclick="R5_3('white')" style="background-color: white;">سفید</option>
+                    </select>
+
+                </div>
+                <div class="sec" id="check5_2">
+                    <select name="sel2" id="id5_2">
+                        <option value="black" onclick="R5_2('black')" selected style="background-color: black;">مشکی
+                        </option>
+                        <option value="brown" onclick="R5_2('brown')" style="background-color: brown;">قهوه ای</option>
+                        <option value="red" onclick="R5_2('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R5_2('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R5_2('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R5_2('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R5_2('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R5_2('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R5_2('gry')" style="background-color: gray;">خاکستری</option>
+                        <option value="white" onclick="R5_2('white')" style="background-color: white;">سفید</option>
+                    </select>
+
+                </div>
+                <div class="sec" id="check5_1">
+                    <select name="sel1" id="id5_1">
+                        <option value="brown" onclick="R5_1('brown')" selected style="background-color: brown;">قهوه ای
+                        </option>
+                        <option value="red" onclick="R5_1('red')" style="background-color: red;">قرمز</option>
+                        <option value="orange" onclick="R5_1('orange')" style="background-color: orange;">نارنجی
+                        </option>
+                        <option value="yellow" onclick="R5_1('yellow')" style="background-color: yellow;">زرد</option>
+                        <option value="green" onclick="R5_1('green')" style="background-color: green;">سبز</option>
+                        <option value="blue" onclick="R5_1('blue')" style="background-color: blue;">آبی</option>
+                        <option value="purple" onclick="R5_1('purple')" style="background-color: purple;">بنفش</option>
+                        <option value="gry" onclick="R5_1('gry')" style="background-color: grey;">خاکستری</option>
+                        <option value="white" onclick="R5_1('white')" style="background-color: white;">سفید</option>
+                    </select>
+
+                </div>
+            </div>
+            <button id="cal5">محاسبه</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
