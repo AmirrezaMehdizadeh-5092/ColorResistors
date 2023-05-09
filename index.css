@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    height: 728px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(221, 249, 240, 0.779);
+    height: 90px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+header h1,
+header h2 {
+    color: rgba(12, 41, 54, 0.849);
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav button {
+    background-color: purple;
+    padding: 15px;
+    width: 200px;
+    margin: 0 15px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+}
+
+nav button:hover {
+    transition: 0.1s all ease-in-out;
+    background-color: rgb(19, 19, 33);
+    scale: 1.05;
+}
+
+.four {
+    height: 638px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+    visibility: visible;
+}
+
+.four .four1 {
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.four .four1 .line {
+    margin-top: 200px;
+    height: 30px;
+    width: 95%;
+    border-radius: 125px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(174, 199, 91, 0.509);
+    background-color: #e1e1e1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    opacity: 0.8;
+}
+
+.four .four1 .box {
+    z-index: 2;
+    position: absolute;
+    height: 200px;
+    width: 75%;
+    right: 190px;
+    top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.four .four1 .box .sec {
+    height: 100px;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: 2px solid #e1e1e1;
+}
+
+.four select {
+    padding: 10px;
+    outline: blue;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.four select option {
+    font-size: 13px;
+    color: white;
+    font-size: 0.91em;
+    font-size-adjust: 0.1;
+}
+
+.four button {
+    background-color: blue;
+    padding: 17.5px;
+    width: 200px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+}
+
+.four button:hover {
+
+    transition: 0.1s all ease-in-out;
+    background-color: rgb(19, 19, 33);
+}
+
+.four #cal {
+    margin-top: 140px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.five {
+    height: 638px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -637px;
+    visibility: hidden;
+}
+
+.five .four1 {
+    height: 550px;
+    width: 100%;
+    position: relative;
+}
+
+.five .four1 .line {
+    margin-top: 200px;
+    height: 30px;
+    width: 95%;
+    border-radius: 125px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(174, 199, 91, 0.509);
+    background-color: #e1e1e1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    opacity: 0.8;
+}
+
+.five .four1 .box {
+    z-index: 2;
+    position: absolute;
+    height: 200px;
+    width: 85%;
+    right: 115px;
+    top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.five .four1 .box .sec {
+    height: 100px;
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: 2px solid #e1e1e1;
+    margin: 0 15px;
+}
+
+.five select {
+    padding: 10px;
+    outline: blue;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.five select option {
+    font-size: 13px;
+    color: white;
+    font-size: 0.91em;
+    font-size-adjust: 0.1;
+}
+
+.five button {
+    background-color: blue;
+    padding: 17.5px;
+    width: 75px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+}
+
+.five button:hover {
+
+    transition: 0.1s all ease-in-out;
+    background-color: rgb(19, 19, 33);
+}
+
+.five #cal5 {
+    margin-top: 140px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+}
